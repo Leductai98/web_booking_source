@@ -1,0 +1,149 @@
+:root {
+  --background-color: #3a6ad5;
+  --primary-color: white;
+  --text-color: #304659;
+  --placecholdeer-color: #696f8c;
+  --border-bottom-color: #9fa3b4;
+}
+.user-name,
+.user-name-edit {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.user-name-edit {
+  display: none;
+}
+.user-name.disabled {
+  display: none;
+}
+.user-name-edit.active {
+  display: flex;
+}
+.name-edit {
+  font-weight: 700;
+  width: fit-content;
+  text-decoration: underline;
+  cursor: pointer;
+  height: fit-content;
+  text-align: end;
+}
+.name-des {
+  width: 85%;
+}
+.name-header {
+  font-weight: 700;
+}
+.name-text {
+  padding: 5px;
+}
+#name-input,
+#oldpass-input,
+#newpass-input {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid var(--border-bottom-color);
+  padding: 5px;
+  color: inherit;
+  width: 100%;
+}
+#oldpass-input.error,
+#newpass-input.error {
+  border-color: red;
+}
+.password-header {
+  font-weight: 700;
+}
+.password-des {
+  width: 85%;
+}
+.password-text {
+  padding: 5px;
+}
+.email-header {
+  font-weight: 700;
+}
+.email-text {
+  padding: 5px;
+}
+.user-password,
+.user-password-edit {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.user-password.disabled {
+  display: none;
+}
+.password-edit-wrap {
+  display: none;
+}
+.password-edit-wrap.active {
+  display: block;
+}
+.password-edit {
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+  height: fit-content;
+  text-align: end;
+}
+.user-email {
+  margin-top: 20px;
+}
+
+.error-oldpass,
+.error-newpass {
+  color: red;
+  margin-left: 20px;
+}
+.edit-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.user__info--background {
+  background: #e0eafc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #cfdef3,
+    #e0eafc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #cfdef3,
+    #e0eafc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 20px;
+  border-radius: 10px;
+}
+.pass-wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.icon-password-user {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+.icon-password-user img {
+  width: 18px;
+  height: 18px;
+  opacity: 0.8;
+  display: none;
+}
+.icon-password-user img.active {
+  display: block;
+}
+#name-input.error {
+  border-color: red;
+}
